@@ -87,10 +87,12 @@
 <meta property="og:site_name" content="Lokiz&#39;s Blog">
 <meta property="og:description" content="这 12 个问题，基本上就是 HTML 和 CSS 基础中的重点和难点了，也是必须要弄清楚的基本问题，其中定位的绝对定位和相对定位到底相对什么定位？这个还是容易被忽视的，浮动也是一个大坑，有很多细节。 下面我们就来看看这 12 个知识点。 一、怎么让一个不定宽高的 DIV，垂直水平居中？1. 使用 Flex 只需要在父盒子：display: flex; justify-content: cente">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-10T03:56:42.593Z">
+<meta property="og:image" content="https://blog.dunizb.com/2018/02/26/10%E4%B8%AAHTML%E5%92%8CCSS%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E9%87%8D%E7%82%B9%E9%9A%BE%E7%82%B9%E9%97%AE%E9%A2%98/">
+<meta property="og:updated_time" content="2018-04-10T08:22:11.240Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="12个 HTML 和 CSS 必须知道的重点难点问题">
 <meta name="twitter:description" content="这 12 个问题，基本上就是 HTML 和 CSS 基础中的重点和难点了，也是必须要弄清楚的基本问题，其中定位的绝对定位和相对定位到底相对什么定位？这个还是容易被忽视的，浮动也是一个大坑，有很多细节。 下面我们就来看看这 12 个知识点。 一、怎么让一个不定宽高的 DIV，垂直水平居中？1. 使用 Flex 只需要在父盒子：display: flex; justify-content: cente">
+<meta name="twitter:image" content="https://blog.dunizb.com/2018/02/26/10%E4%B8%AAHTML%E5%92%8CCSS%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E9%87%8D%E7%82%B9%E9%9A%BE%E7%82%B9%E9%97%AE%E9%A2%98/">
 
 
 
@@ -368,7 +370,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,991
+                  3,897
                 </span>
               
 
@@ -384,7 +386,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  11
+                  14
                 </span>
               
             </div>
@@ -519,43 +521,61 @@
 </ul>
 <p>由于响应式开发显得繁琐些，一般是用第三方响应式框架来完成，比如 bootstrap 来完成一部分工作，当然也可以自己编写响应式。</p>
 <p><strong>区别：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-</th>
-<th>流式布局</th>
-<th>响应式开发</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>开发方式</td>
-<td>移动 Web 开发 + PC 开发</td>
-<td>响应式开发</td>
-</tr>
-<tr>
-<td>应用场景</td>
-<td>一般在已经有 PC 端网站，开发移动的时候只需要单独开发移动端</td>
-<td>针对一些新建的网站，现在要求适配移动端，所以就要求适配移动端，所以就一套页面兼容各种终端</td>
-</tr>
-<tr>
-<td>开发</td>
-<td>针对性强，开发效率高</td>
-<td>兼容各种终端，效率低</td>
-</tr>
-<tr>
-<td>适配</td>
-<td>只适配移动设备，pad 上体验相对较差</td>
-<td>可以适配各种终端</td>
-</tr>
-<tr>
-<td>效率</td>
-<td>代码简洁，加载快</td>
-<td>代码相对复杂，加载慢</td>
-</tr>
-</tbody>
-</table>
 <table><br>  <tr><br>    <th>-</th><br>    <th>流式布局</th><br>    <th>响应式开发</th><br>  </tr><br>  <tr><br>    <td>开发方式</td><br>    <td>移动 Web 开发 + PC 开发</td><br>    <td>响应式开发</td><br>  </tr><br>  <tr><br>    <td>应用场景</td><br>    <td>一般在已经有 PC 端网站，开发移动的时候只需要单独开发移动端</td><br>    <td>针对一些新建的网站，现在要求适配移动端，所以就要求适配移动端，所以就一套页面兼容各种终端</td><br>  </tr><br>  <tr><br>    <td>开发</td><br>    <td>针对性强，开发效率高</td><br>    <td>兼容各种终端，效率低</td><br>  </tr><br>  <tr><br>    <td>适配</td><br>    <td>只适配移动设备，pad 上体验相对较差</td><br>    <td>可以适配各种终端</td><br>  </tr><br>  <tr><br>    <td>效率</td><br>    <td>代码简洁，加载快</td><br>    <td>代码相对复杂，加载慢</td><br>  </tr><br></table>
+
+
+
+<h3 id="9-渐进增强和优雅降级"><a href="#9-渐进增强和优雅降级" class="headerlink" title="9.渐进增强和优雅降级"></a>9.渐进增强和优雅降级</h3><p>关键的区别是他们所侧重的内容，以及这种不同造成的工作流程的差异</p>
+<ul>
+<li><strong>优雅降级</strong> 一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。</li>
+<li><strong>渐进增强</strong> 针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。</li>
+</ul>
+<p><strong>区别：</strong></p>
+<ul>
+<li><strong>优雅降级</strong> 是从复杂的现状开始，并试图减少用户体验的供给。</li>
+<li><strong>渐进增强</strong> 则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要。</li>
+<li>降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带。</li>
+</ul>
+<h3 id="10-CSS-隐藏元素的几种方式及区别"><a href="#10-CSS-隐藏元素的几种方式及区别" class="headerlink" title="10. CSS 隐藏元素的几种方式及区别"></a>10. CSS 隐藏元素的几种方式及区别</h3><p><strong><code>display:none</code></strong></p>
+<ul>
+<li>元素在页面上将彻底消失，元素原本占有的空间就会被其他元素占有，也就是说它会导致浏览器的重排和重绘。</li>
+<li>不会触发其点击事件。</li>
+</ul>
+<p><strong><code>visibility:hidden</code></strong></p>
+<ul>
+<li>和 <code>display:none</code> 的区别在于，<code>元素在页面消失后，其占据的空间依旧会保留着</code>，所以它 <code>只会导致浏览器重绘</code> 而不会重排。</li>
+<li>无法触发其点击事件。</li>
+<li>适用于那些元素隐藏后不希望页面布局会发生变化的场景</li>
+</ul>
+<p><strong><code>opacity:0</code></strong></p>
+<ul>
+<li>将元素的透明度设置为 0 后，在我们用户眼中，元素也是隐藏的，这算是一种隐藏元素的方法。</li>
+<li>和 <code>visibility:hidden</code> 的一个共同点是元素隐藏后依旧占据着空间，但我们都知道，设置透明度为 0 后，元素只是隐身了，它依旧存在页面中。</li>
+<li>可以触发点击事件。</li>
+</ul>
+<p><strong>设置 <code>height</code>、<code>width</code> 等盒模型属性为 0</strong></p>
+<ul>
+<li>简单说就是将元素的 <code>margin</code>、<code>border</code>、<code>padding</code>、<code>height</code> 和 <code>width</code> 等影响元素盒模型的属性设置为 0，如果元素内有子元素或内容，还应该设置其 <code>overflow:hidden</code> 来隐藏其子元素，这算是一种奇技淫巧。</li>
+<li>如果元素设置了 <code>border</code>、<code>padding</code> 等属性不为 0，很显然，页面上还是能看到这个元素的，触发元素的点击事件完全没有问题。如果全部属性都设置为 0，很显然，这个元素相当于消失了，即无法触发点击事件。</li>
+<li>这种方式既不实用，也可能存在着一些问题。但平时我们用到的一些页面效果可能就是采用这种方法来完成的，比如 jQuery 的 <code>slideUp</code> 动画，它就是设置元素的 <code>overflow:hidden</code> 后，接着通过定时器，不断地设置元素的 <code>height</code>、<code>margin-top</code>、<code>margin-bottom</code>、<code>border-top</code>、<code>border-bottom</code>、<code>padding-top</code>、<code>padding-bottom</code> 为 0，从而达到 <code>slideUp</code> 的效果。</li>
+</ul>
+<p><strong>其他脑洞方法</strong></p>
+<ul>
+<li>设置元素的 <code>position</code> 与 <code>left</code>、<code>top</code>、<code>bottom</code>、<code>right</code> 等，将元素移出至屏幕外。</li>
+<li>设置元素的<code>position</code> 与 <code>z-index</code>，将 <code>z-index</code> 设置成尽量小的负数。</li>
+</ul>
+<h3 id="11-简述一下-src-与-href-的区别"><a href="#11-简述一下-src-与-href-的区别" class="headerlink" title="11. 简述一下 src 与 href 的区别"></a>11. 简述一下 <code>src</code> 与 <code>href</code> 的区别</h3><p><code>href</code> 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。</p>
+<p><code>src</code> 是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；<br>在请求 <code>src</code>资源时会将其指向的资源下载并应用到文档内，例如 js 脚本，img 图片和 frame 等元素。<br>当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将 js 脚本放在底部而不是头部。</p>
+<h3 id="12-行内元素有哪些？块级元素有哪些？空（void）元素有哪些？"><a href="#12-行内元素有哪些？块级元素有哪些？空（void）元素有哪些？" class="headerlink" title="12. 行内元素有哪些？块级元素有哪些？空（void）元素有哪些？"></a>12. 行内元素有哪些？块级元素有哪些？空（void）元素有哪些？</h3><ul>
+<li><p>行内元素：<br>a、b、span、img、input、strong、select、label、em、button、textarea</p>
+</li>
+<li><p>块级元素：<br>div、ul、li、dl、dt、dd、p、h1-h6、blockquote</p>
+</li>
+<li><p>空元素（即没有内容的 HTML 元素），例如：<br>br、meta、hr、link、input、img</p>
+</li>
+</ul>
+<p>转载于：<br><img src="https://blog.dunizb.com/2018/02/26/10%E4%B8%AAHTML%E5%92%8CCSS%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E9%87%8D%E7%82%B9%E9%9A%BE%E7%82%B9%E9%97%AE%E9%A2%98/" alt="HTML和CSS基础中必须知道的重点难点问题"> – Dunizb</p>
+
       
     </div>
     
@@ -752,7 +772,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、怎么让一个不定宽高的-DIV，垂直水平居中？"><span class="nav-number">1.</span> <span class="nav-text">一、怎么让一个不定宽高的 DIV，垂直水平居中？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-使用-Flex"><span class="nav-number">1.1.</span> <span class="nav-text">1. 使用 Flex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-使用-CSS3-transfrom"><span class="nav-number">1.2.</span> <span class="nav-text">2. 使用 CSS3 transfrom</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-使用-display-table-cell-方法"><span class="nav-number">1.3.</span> <span class="nav-text">3. 使用 display: table-cell 方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、position-几个属性的作用"><span class="nav-number">2.</span> <span class="nav-text">二、position 几个属性的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-static（默认位置）"><span class="nav-number">2.1.</span> <span class="nav-text">1. static（默认位置）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-relative（相对定位）"><span class="nav-number">2.2.</span> <span class="nav-text">2. relative（相对定位）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-absolute（绝对定位）"><span class="nav-number">2.3.</span> <span class="nav-text">3. absolute（绝对定位）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-fixed（固定定位）"><span class="nav-number">2.4.</span> <span class="nav-text">4. fixed（固定定位）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、浮动与清除浮动"><span class="nav-number">3.</span> <span class="nav-text">三、浮动与清除浮动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-浮动相关知识"><span class="nav-number">3.1.</span> <span class="nav-text">1. 浮动相关知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-父元素高度塌陷问题"><span class="nav-number">3.2.</span> <span class="nav-text">2. 父元素高度塌陷问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-清除浮动的方法"><span class="nav-number">3.3.</span> <span class="nav-text">3. 清除浮动的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-BFC-相关知识"><span class="nav-number">3.4.</span> <span class="nav-text">4. BFC 相关知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-box-sizing-是什么"><span class="nav-number">3.5.</span> <span class="nav-text">5. box-sizing 是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-px、em、rem-的区别"><span class="nav-number">3.6.</span> <span class="nav-text">6. px、em、rem 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-CSS-引入的方式有哪些？link-和-import-的区别是？"><span class="nav-number">3.7.</span> <span class="nav-text">7. CSS 引入的方式有哪些？link 和 @import 的区别是？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-流式布局和响应式布局的区别"><span class="nav-number">3.8.</span> <span class="nav-text">8. 流式布局和响应式布局的区别</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、怎么让一个不定宽高的-DIV，垂直水平居中？"><span class="nav-number">1.</span> <span class="nav-text">一、怎么让一个不定宽高的 DIV，垂直水平居中？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-使用-Flex"><span class="nav-number">1.1.</span> <span class="nav-text">1. 使用 Flex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-使用-CSS3-transfrom"><span class="nav-number">1.2.</span> <span class="nav-text">2. 使用 CSS3 transfrom</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-使用-display-table-cell-方法"><span class="nav-number">1.3.</span> <span class="nav-text">3. 使用 display: table-cell 方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、position-几个属性的作用"><span class="nav-number">2.</span> <span class="nav-text">二、position 几个属性的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-static（默认位置）"><span class="nav-number">2.1.</span> <span class="nav-text">1. static（默认位置）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-relative（相对定位）"><span class="nav-number">2.2.</span> <span class="nav-text">2. relative（相对定位）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-absolute（绝对定位）"><span class="nav-number">2.3.</span> <span class="nav-text">3. absolute（绝对定位）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-fixed（固定定位）"><span class="nav-number">2.4.</span> <span class="nav-text">4. fixed（固定定位）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、浮动与清除浮动"><span class="nav-number">3.</span> <span class="nav-text">三、浮动与清除浮动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-浮动相关知识"><span class="nav-number">3.1.</span> <span class="nav-text">1. 浮动相关知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-父元素高度塌陷问题"><span class="nav-number">3.2.</span> <span class="nav-text">2. 父元素高度塌陷问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-清除浮动的方法"><span class="nav-number">3.3.</span> <span class="nav-text">3. 清除浮动的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-BFC-相关知识"><span class="nav-number">3.4.</span> <span class="nav-text">4. BFC 相关知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-box-sizing-是什么"><span class="nav-number">3.5.</span> <span class="nav-text">5. box-sizing 是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-px、em、rem-的区别"><span class="nav-number">3.6.</span> <span class="nav-text">6. px、em、rem 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-CSS-引入的方式有哪些？link-和-import-的区别是？"><span class="nav-number">3.7.</span> <span class="nav-text">7. CSS 引入的方式有哪些？link 和 @import 的区别是？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-流式布局和响应式布局的区别"><span class="nav-number">3.8.</span> <span class="nav-text">8. 流式布局和响应式布局的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-渐进增强和优雅降级"><span class="nav-number">3.9.</span> <span class="nav-text">9.渐进增强和优雅降级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-CSS-隐藏元素的几种方式及区别"><span class="nav-number">3.10.</span> <span class="nav-text">10. CSS 隐藏元素的几种方式及区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-简述一下-src-与-href-的区别"><span class="nav-number">3.11.</span> <span class="nav-text">11. 简述一下 src 与 href 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-行内元素有哪些？块级元素有哪些？空（void）元素有哪些？"><span class="nav-number">3.12.</span> <span class="nav-text">12. 行内元素有哪些？块级元素有哪些？空（void）元素有哪些？</span></a></li></ol></li></ol></div>
             
 
           </div>
