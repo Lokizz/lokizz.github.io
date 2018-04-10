@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Lokiz&#39;s Blog">
 <meta property="og:description" content="这 12 个问题，基本上就是 HTML 和 CSS 基础中的重点和难点了，也是必须要弄清楚的基本问题，其中定位的绝对定位和相对定位到底相对什么定位？这个还是容易被忽视的，浮动也是一个大坑，有很多细节。 下面我们就来看看这 12 个知识点。 一、怎么让一个不定宽高的 DIV，垂直水平居中？1. 使用 Flex 只需要在父盒子：display: flex; justify-content: cente">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-09T09:34:33.373Z">
+<meta property="og:updated_time" content="2018-04-09T09:56:52.042Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="12个 HTML 和 CSS 必须知道的重点难点问题">
 <meta name="twitter:description" content="这 12 个问题，基本上就是 HTML 和 CSS 基础中的重点和难点了，也是必须要弄清楚的基本问题，其中定位的绝对定位和相对定位到底相对什么定位？这个还是容易被忽视的，浮动也是一个大坑，有很多细节。 下面我们就来看看这 12 个知识点。 一、怎么让一个不定宽高的 DIV，垂直水平居中？1. 使用 Flex 只需要在父盒子：display: flex; justify-content: cente">
@@ -368,7 +368,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,427
+                  1,526
                 </span>
               
 
@@ -384,7 +384,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  6
                 </span>
               
             </div>
@@ -450,11 +450,18 @@
 </ul>
 <p><strong><code>clear</code> 属性：</strong><br>确保当前元素的左右两侧不会有浮动元素。<code>clear</code> 只对元素本身的布局起作用。 取值：<code>left</code>、<code>right</code>、<code>both</code>。</p>
 <h3 id="2-父元素高度塌陷问题"><a href="#2-父元素高度塌陷问题" class="headerlink" title="2. 父元素高度塌陷问题"></a>2. 父元素高度塌陷问题</h3><p><strong>为什么要清楚浮动，父元素高度塌陷</strong></p>
-<p>解决父元素高度塌陷问题：</p>
-<p>一个块级元素如果没有设置 <code>height</code>，其 <code>height</code> 是由子元素撑开的。对子元素使用了浮动之后，子元素会脱离标准文档流，也就是说，父级元素中没有内容可以撑开其高度，这样父级元素的 <code>height</code> 就会被忽略，这就是所谓的高度塌陷。</p>
-<h3 id="3-清除浮动的方法"><a href="#3-清除浮动的方法" class="headerlink" title="3. 清除浮动的方法"></a>3. 清除浮动的方法</h3><p><strong>方法 1：给父级 DIV 定义 <code>height</code></strong><br>原理：<br>给父级 DIV 定义固定高度(<code>height</code>)，能解决父级 DIV 无法获取高度的问题。<br>优点：<br>代码简洁。<br>缺点：<br>高度被固定死了，是适合内容固定不变的模块(不推荐使用)。</p>
-<p><strong>方法 2：使用空元素(void)，如 <code>&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt; (.clear{clear:both})</code> </strong><br>原理：<br>添加一对空的 DIV 标签，利用 CSS 的 <code>clear:both</code> 属性清除浮动，让父级 DIV 能够获取高度。<br>优点：<br>浏览器支持好<br>缺点：<br>多出了很多空的 DIV 标签，如果页面中浮动模块多的话，就会出现很多的空置 DIV 了，这样感觉视乎不是太令人满意。(不推荐使用)</p>
-<p>**  </p>
+<p>解决父元素高度塌陷问题：<br>一个块级元素如果没有设置 <code>height</code>，其 <code>height</code> 是由子元素撑开的。对子元素使用了浮动之后，子元素会脱离标准文档流，也就是说，父级元素中没有内容可以撑开其高度，这样父级元素的 <code>height</code> 就会被忽略，这就是所谓的高度塌陷。</p>
+<h3 id="3-清除浮动的方法"><a href="#3-清除浮动的方法" class="headerlink" title="3. 清除浮动的方法"></a>3. 清除浮动的方法</h3><p><strong>方法 1：给父级 DIV 定义 <code>height</code></strong><br>原理：<br>给父级 DIV 定义固定高度(<code>height</code>)，能解决父级 DIV 无法获取高度的问题。</p>
+<p>优点：<br>代码简洁。</p>
+<p>缺点：<br>高度被固定死了，是适合内容固定不变的模块(不推荐使用)。</p>
+<p><strong>方法 2：使用空元素(void)，如 <code>&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt; (.clear{clear:both})</code> </strong><br>原理：<br>添加一对空的 DIV 标签，利用 CSS 的 <code>clear:both</code> 属性清除浮动，让父级 DIV 能够获取高度。</p>
+<p>优点：<br>浏览器支持好</p>
+<p>缺点：<br>多出了很多空的 DIV 标签，如果页面中浮动模块多的话，就会出现很多的空置 DIV 了，这样感觉视乎不是太令人满意。(不推荐使用)</p>
+<p><strong>  方法 3：让父级 DIV 也一并浮起来</strong><br>这样做可以初步解决当前的浮动问题。但是也让父级浮动起来了，又会产生新的浮动问题。(不推荐使用)</p>
+<p><strong> 方法 4：父级 DIV 定义 <code>display: table</code> </strong><br>原理：<br>将 DIV 属性强制变成表格。</p>
+<p>优点：<br>不解。</p>
+<p>缺点：<br>会产生新的未知问题。(不推荐使用)</p>
+<p>**方法</p>
 
       
     </div>
