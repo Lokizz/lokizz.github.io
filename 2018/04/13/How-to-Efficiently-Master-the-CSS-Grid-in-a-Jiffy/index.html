@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="CSS,前端," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="How to Efficiently Master the CSS Grid–in a JiffyLearn the 20% you need for 80% efficiency with the CSS Grid.  IntroductionThis is NOT the article to learn “everything” about the CSS grid. On the cont">
+<meta name="keywords" content="CSS,前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Efficiently Master the CSS Grid--in a Jiffy">
+<meta property="og:url" content="http://yoursite.com/2018/04/13/How-to-Efficiently-Master-the-CSS-Grid-in-a-Jiffy/index.html">
+<meta property="og:site_name" content="Lokiz&#39;s Blog">
+<meta property="og:description" content="How to Efficiently Master the CSS Grid–in a JiffyLearn the 20% you need for 80% efficiency with the CSS Grid.  IntroductionThis is NOT the article to learn “everything” about the CSS grid. On the cont">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*LPf5rSOWKaSKTOUwkqfK0w.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*ripUP4LuXPQ851Zlq79bWQ.gif">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*uFGh3Vo2i9MneYvjqJNhRw.gif">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*xcID2GAZoYqhb4LYjN6Qug.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*9K74dULhLERm5_3a37Byqw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*7X_NTZG0ikpVwsaB0qfdAw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*_4ZnWO3zlt82VMHQ_3VNXA.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/400/1*oan28239S-v0oJZECQPKIA.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/400/1*-tby4L7UaQavuy6uc0H1LQ.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/400/1*xkbT0CjkBWb-5S_hxcBvGw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*OGJmxXekTwSlW-aoTeSXEw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*TcGMy7iMxXoRbqs8hL0NHw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*VFkE679czY0Tb49R9GNvyg.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*80Qn4c32kqbQzMVh-AcAoQ.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*1TWb0kZ4nn6uvykRLMGtOw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*D5ILayU5dx_la2wnyn6ZYw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*7X_NTZG0ikpVwsaB0qfdAw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*xN-041OZXzMZvCJ76WRtfQ.jpeg">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*NjMwDa_1b1vHkAbpXI_f7w.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*LNfazbNhUOy6YBEE7Sr_Uw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*9H_Ylq3VVHRLQRTZZLYbQQ.gif">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*Gd8H2uQF3-TVi4lq7g1UAw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*WeVXg_bAwa5UKqdZHiwQ7w.gif">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*DY1tA49VLEOy0I5Fb_HmlQ.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*QcpsRWdU5Q01YC-C2Et11w.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*gwdH9pKxjMw7MnO8vPmTgw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*K2ikIxNuiWo8tfY-5RvBXg.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*hc80JsuD3IsxxwrAijFWzQ.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*uhNqMg2RUv_bo5371BrOfQ.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*h60PmaHUtZAMZrC5xrRtbA.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*9Yi3TudvNbbTdYtDBsqL1w.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*Dj_iJrYWYA4lpQdxuzx4Cw.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*3EldPliJB9kqZmu9B1UaRg.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*iFRIMSqQYAl2AhHBgsCjdw.gif">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/1000/1*hc80JsuD3IsxxwrAijFWzQ.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*lz7cE6DLCPeX-S6bwCVRJw.gif">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*F7_nB62n6q9TV9aDJJ23tA.png">
+<meta property="og:updated_time" content="2018-04-17T09:54:36.981Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to Efficiently Master the CSS Grid--in a Jiffy">
+<meta name="twitter:description" content="How to Efficiently Master the CSS Grid–in a JiffyLearn the 20% you need for 80% efficiency with the CSS Grid.  IntroductionThis is NOT the article to learn “everything” about the CSS grid. On the cont">
+<meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*LPf5rSOWKaSKTOUwkqfK0w.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/04/13/How-to-Efficiently-Master-the-CSS-Grid-in-a-Jiffy/"/>
+
+
+
+
+
+  <title>How to Efficiently Master the CSS Grid--in a Jiffy | Lokiz's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lokiz's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">成长记录</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/13/How-to-Efficiently-Master-the-CSS-Grid-in-a-Jiffy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lokiz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lokiz's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">How to Efficiently Master the CSS Grid--in a Jiffy</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-13T14:36:19+08:00">
+                2018-04-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/13/How-to-Efficiently-Master-the-CSS-Grid-in-a-Jiffy/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/04/13/How-to-Efficiently-Master-the-CSS-Grid-in-a-Jiffy/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4,035
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  25
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="How-to-Efficiently-Master-the-CSS-Grid–in-a-Jiffy"><a href="#How-to-Efficiently-Master-the-CSS-Grid–in-a-Jiffy" class="headerlink" title="How to Efficiently Master the CSS Grid–in a Jiffy"></a>How to Efficiently Master the CSS Grid–in a Jiffy</h1><font style="background-color:#e6f2ff"><strong>Learn the 20% you need for 80% efficiency with the CSS Grid.</strong></font>
+
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This is NOT the article to learn “everything” about the CSS grid.</p>
+<p>On the contrary, the target audience is people who want results quickly, and be productive while at it.</p>
+<p>In the four parts of this article, I will show you the 20% you need for 80% efficiency with the CSS Grid layout.</p>
+<p>Let’s dig in!</p>
+<h3 id="Why-just-20"><a href="#Why-just-20" class="headerlink" title="Why just 20%"></a>Why just 20%</h3><p><img src="https://cdn-images-1.medium.com/max/800/1*LPf5rSOWKaSKTOUwkqfK0w.png" alt="Laziness"></p>
+<p>Where possible, a programmer seeks efficiency–the supposed lazy way out.</p>
+<p>The CSS Grid layout is complex. In my opinion, more complex than Felxbox. <em>(mehn, it took me weeks to figure out flexbox)</em><br>Not so because it is “diffcult” but the CSS Grid has 18 new properties plus other concepts you’ve never heard of anywhere else in CSS.</p>
+<p>So, do you need all of these new properties now? Right now?</p>
+<p>No, you don’t!</p>
+<p>Just learn the bit to get you results now. You can go ahead to learn the other properties later. This is my definition of “efficiency with the CSS Grid layout”.</p>
+<h3 id="1-What-is-the-CSS-Grid-Layout"><a href="#1-What-is-the-CSS-Grid-Layout" class="headerlink" title="1. What is the CSS Grid Layout?"></a>1. What is the CSS Grid Layout?</h3><p>If you’re new to layouts in CSS, the CSS Grid layout may seem strang to you.</p>
+<p>Have you heard of Flexbox?</p>
+<p>I like to view the CSS Grid layout as an older sibling (or parent) of Flexbox.</p>
+<p>Handling Layouts in CSS have been difficult and crappy. Flexbox brought a bit of fresh air–but the CSS Grid is even better.</p>
+<h3 id="What-we’ll-Bulid"><a href="#What-we’ll-Bulid" class="headerlink" title="What we’ll Bulid"></a>What we’ll Bulid</h3><p>You will learn to apply your 20% knowledge to building a clone of responsive music app layout.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*ripUP4LuXPQ851Zlq79bWQ.gif" alt="Responsive Music App" title="a responsive music app, catty music"></p>
+<p><br></p>
+<h2 id="Part-1-The-10-you-Need-to-Know–Basic-Terminologies"><a href="#Part-1-The-10-you-Need-to-Know–Basic-Terminologies" class="headerlink" title="Part 1: The 10% you Need to Know–Basic Terminologies"></a>Part 1: The 10% you Need to Know–Basic Terminologies</h2><p>Let’s take a look at the first things you absolutely have to know.</p>
+<p><br></p>
+<h3 id="What-is-a-Grid-Container"><a href="#What-is-a-Grid-Container" class="headerlink" title="What is a Grid Container?"></a>What is a Grid Container?</h3><p>Every website, or application layout you make (or have seen) is essentially, boxes placed within certain defined boundaries.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*uFGh3Vo2i9MneYvjqJNhRw.gif" alt="Grid Container" title="Grid Container Gif"></p>
+<p>In very simple terms, a grid is just “lines”. Horizontal and verical lines that define the placement of other design elements.</p>
+<p>You’ll be familiar with this if you use design software such as adobe photoshop or sketch.</p>
+<p>In the context of the CSS Grid layout, A Grid container is the parent that contains all the items in the grid. The Grid container defines the initial placement of the grid lines, both vertical and horizontal.</p>
+<h3 id="What-is-a-Grid-Line"><a href="#What-is-a-Grid-Line" class="headerlink" title="What is a Grid Line?"></a>What is a Grid Line?</h3><p>Assume for a bit that you have a fully laid out grid like this:</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*xcID2GAZoYqhb4LYjN6Qug.png" alt="Supposed grid layout" title="Supposed gird layout"></p>
+<p>The layout comprises a grid container with a number of perfectly laid out grid items (children elements within the grid).</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*9K74dULhLERm5_3a37Byqw.png" alt="A bit of explanation" title="A bit of explanation"></p>
+<p>Grid lines are the horizontal and vertical lines that divide the grid.</p>
+<h3 id="What-is-a-Grid-Cell"><a href="#What-is-a-Grid-Cell" class="headerlink" title="What is a Grid Cell?"></a>What is a Grid Cell?</h3><p>A Grid cell is the smallest unit of area in a grid layout. It is any space bounded by four grid lines.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*7X_NTZG0ikpVwsaB0qfdAw.png" alt="Grid cells" title="Grid cells"></p>
+<h3 id="Grid-Area"><a href="#Grid-Area" class="headerlink" title="Grid Area"></a>Grid Area</h3><p>A grid area may be as small as the area contained within a grid cell (shown above). It may not also be as large as all the cells within the grid.</p>
+<p>In the image below, the area covered by the four cells is a grid area.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*_4ZnWO3zlt82VMHQ_3VNXA.png" alt="Grid area" title="Example grid area"></p>
+<h3 id="What-is-a-Grid-Track"><a href="#What-is-a-Grid-Track" class="headerlink" title="What is a Grid Track"></a>What is a Grid Track</h3><p>I don’t like very technical definitions. So, a grid track may be seen as a fancy name for columns and (or) rows. It is the space between any two grid line.</p>
+<p><img src="https://cdn-images-1.medium.com/max/400/1*oan28239S-v0oJZECQPKIA.png" alt="Grid Track 1" title="Grid track 1"> <img src="https://cdn-images-1.medium.com/max/400/1*-tby4L7UaQavuy6uc0H1LQ.png" alt="Grid Track 2" title="Grid track 2"> <img src="https://cdn-images-1.medium.com/max/400/1*xkbT0CjkBWb-5S_hxcBvGw.png" alt="Grid Track 3" title="Grid track 3"></p>
+<p>So, we’ve got the first part sorted out.</p>
+<p><br></p>
+<h2 id="Part-2-The-“Other”-10-you-Need-to-Know–CSS-Grid-Baby-steps"><a href="#Part-2-The-“Other”-10-you-Need-to-Know–CSS-Grid-Baby-steps" class="headerlink" title="Part 2: The “Other” 10% you Need to Know–CSS Grid, Baby steps."></a>Part 2: The “Other” 10% you Need to Know–CSS Grid, Baby steps.</h2><p>Now that you understand the basic terminologies, like an adventurous kid, let’s get kicking!</p>
+<h3 id="How-do-you-Define-a-Grid"><a href="#How-do-you-Define-a-Grid" class="headerlink" title="How do you Define a Grid?"></a>How do you Define a Grid?</h3><p>Just like Flexbox, everything begins with a one-liner. <code>display: grid</code> or <code>display: inline-grid</code> for an inline version.</p>
+<p>For example, to make a certain <code>div</code> a grid container, do this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">  display: grid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="How-do-you-Create-Columns-and-Rows"><a href="#How-do-you-Create-Columns-and-Rows" class="headerlink" title="How do you Create Columns and Rows?"></a>How do you Create Columns and Rows?</h3><p>A grid without columns and rows is kinda pointless. To create columns and rows within a grid container, you use these two new CSS properties: <code>grid-template-columns</code> and <code>grid-template-rows</code>.</p>
+<p>So how do you use these? Pretty simple.</p>
+<p><code>grid-template-columns</code> defines the placement of the columns. <code>grid-template-rows</code> defines the placement of the rows.</p>
+<p>You pass in length values into these properties, and they create row and column tracks within the grid container.</p>
+<p>See an example:</p>
+<p><code>grid-template-columns: 100px 200px 300px</code></p>
+<p>This will create 3 new columns within the grid container. The first with a length of <code>100px</code>, the other, <code>200px</code> and the last, <code>300px</code>.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*OGJmxXekTwSlW-aoTeSXEw.png" alt="3 grid columns" title="3 grid columns"></p>
+<p><code>grid-template-rows: 100px 200px 300px</code></p>
+<p>This will create 3 new rows within the grid container. The extenes are shown below.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*TcGMy7iMxXoRbqs8hL0NHw.png" alt="3 grid rows" title="3 grid rows"></p>
+<p>Now put these together, and you get a full grid–with rows and columns defined.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grid-template-columns: 100px 200px 300px</span><br><span class="line">grid-template-rows: 100px 200px 300px</span><br></pre></td></tr></table></figure>
+<p><br></p>
+<h2 id="Part-3-Time-to-Code–CSS-Grid-Hands-on"><a href="#Part-3-Time-to-Code–CSS-Grid-Hands-on" class="headerlink" title="Part 3: Time to Code–CSS Grid, Hands-on"></a>Part 3: Time to Code–CSS Grid, Hands-on</h2><p>Now let’s take baby steps to buliding a clone of the famous music app, catty music.</p>
+<p>For speedy development, I would be using  <a href="http://www.codepen.io/" target="_blank" rel="noopener">Codepen</a>. Spin up a new project, and let’s get cracking.</p>
+<h3 id="How-to-Create-the-Basic-Grid-Setup-for-Catty-Music"><a href="#How-to-Create-the-Basic-Grid-Setup-for-Catty-Music" class="headerlink" title="How to Create the Basic Grid Setup for Catty Music"></a>How to Create the Basic Grid Setup for Catty Music</h3><p>I believe you have a basic codepen project up and running now.</p>
+<p>We will kick off with a very basic <code>html</code> document.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;aside&gt;&lt;/aside&gt;</span><br><span class="line">  &lt;main&gt;&lt;/main&gt;</span><br><span class="line">  &lt;footer&gt;&lt;/footer&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>There’s a bit of foresight involved in choosing this structure. You’ll understand very soon.</p>
+<p>Now style the document.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  display: grid;</span><br><span class="line">  min-height: 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>This will kick off the grid formatting context by making the body a <code>grid-container</code>.</p>
+<p>Now we can go on to define the rows and columns structure within the grid.</p>
+<h3 id="How-to-create-the-Rows-and-Columns-for-Catty-Music"><a href="#How-to-create-the-Rows-and-Columns-for-Catty-Music" class="headerlink" title="How to create the Rows and Columns for Catty Music"></a>How to create the Rows and Columns for Catty Music</h3><p>Creating the rows and columns is pretty easy.</p>
+<p>The final design we are gunning for is this:</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*VFkE679czY0Tb49R9GNvyg.png" alt="final layout" title="final layout"></p>
+<p>However, the initial grid setup we need is a grid of 2 rows and 2 columns.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*80Qn4c32kqbQzMVh-AcAoQ.png" alt="initial grid" title="the initial grid"></p>
+<p>Here are a few things to note about this Grid setup<br><strong>Columns:</strong></p>
+<ol>
+<li>The first column must have a fixed width–say, 50px</li>
+<li>The second column must fill the remaining width in the grid.</li>
+</ol>
+<p><strong>Rows:</strong></p>
+<ol>
+<li>The second row must have a fixed height–say, 100px</li>
+<li>The first row must also fill the remaining height within the grid.</li>
+</ol>
+<p><strong>The lay-man’s solution.</strong><br>If you’re NOT very experienced with CSS, you’re likely to write this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  ...</span><br><span class="line">  grid-template-rows: 100% 100px;</span><br><span class="line">  grid-template-columns: 50px 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The problem with this is that you have accidentally created a grid whose width and height is a total of <code>100% + 50px</code>.</p>
+<p>We want a total width and height of exactly <code>100%</code>. So this approach is wrong.</p>
+<p><strong>The “smart” person’s solution.</strong><br>If you’ve got some experience with CSS under your belt, then you’re likely to do something much more smarter. Like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  ...</span><br><span class="line">  grid-template-rows: calc(100% - 50px) 50px;</span><br><span class="line">  grid-template-columns: 50px calc(100% - 50px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>This is pretty smart. But it’s got one problem–it isn’t very maintainable.</p>
+<p>For example, if for some reasons you have to change any of the fixed widths, then you must always change the calc definition.</p>
+<p><strong>The efficient solution</strong><br>Luckily, CSS Grid has a new unit that solves our problem elegantly. <a href="https://medium.com/flexbox-and-grids/the-css-fractional-unit-fr-in-approachable-plain-language-fdc47bd387f7" target="_blank" rel="noopener">The fractional unit (fr)</a>.</p>
+<p>The fractional unit solves the problem of automatically distributing space.</p>
+<p>If you have three grid columns aligned as shown below, the fractional unit will automatically distribute the space equally.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*1TWb0kZ4nn6uvykRLMGtOw.png" alt="the fractional unit 1" title="3 fractional units"></p>
+<p>If for some reasons you add more elements–no worries. The <code>fr</code> unit will equally redistribute the space.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*D5ILayU5dx_la2wnyn6ZYw.png" alt="the fractional unit 2" title="more fractional units"></p>
+<p>Finally, if you have a fixed width element, then you can take up the remaining space with the <code>fr</code> unit.</p>
+<p>Here’s what I mean:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  ...</span><br><span class="line">  grid-template-rows: 1fr 50px;</span><br><span class="line">  grid-template-columns: 50px 1fr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>And that is it–done!</p>
+<p>If you’re still confused with <code>fr</code> unit, please check out, <a href="https://medium.com/flexbox-and-grids/the-css-fractional-unit-fr-in-approachable-plain-language-fdc47bd387f7" target="_blank" rel="noopener">the CSS Fractional Unit(fr) In Approachable, plain Language</a>. It only takes 3 minutes.</p>
+<h3 id="Naming-and-Positioning-Items-by-Grid-Areas"><a href="#Naming-and-Positioning-Items-by-Grid-Areas" class="headerlink" title="Naming and Positioning Items by Grid Areas"></a>Naming and Positioning Items by Grid Areas</h3><p>We explicitly created the grid system. Now, let’s put it to use.</p>
+<p>The goal of this section is to learn to position grid items using grid areas.</p>
+<p>If you recall from an earlier section, a grid area is any area bounded by 4 gird lines.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*7X_NTZG0ikpVwsaB0qfdAw.png" alt="example grid cell" title="example grid cell"></p>
+<h3 id="How-do-you-start-using-grid-areas"><a href="#How-do-you-start-using-grid-areas" class="headerlink" title="How do you start using grid areas?"></a>How do you start using grid areas?</h3><p>The logical place to begin is naming grid areas.</p>
+<p>Let me explain that.</p>
+<p>Consider the code block below:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;aside&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;main&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>3 divs–simple. By the way, it is semantically better to use <code>aside</code>、<code>main</code> and <code>footer</code> tags. I’ll just keep things simple.</p>
+<p>Now see this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.main &#123;</span><br><span class="line">  grid-area: content;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.footer &#123;</span><br><span class="line">  grid-area: footer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.aside &#123;</span><br><span class="line">  grid-area: asidebar;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="What-is-happening-there"><a href="#What-is-happening-there" class="headerlink" title="What is happening there?"></a>What is happening there?</h3><p>If you write a bit of JavaScript, or any programming language, then the concepts of variables isn’t new to you.</p>
+<p>In JavaScript, we could say:</p>
+<p><code>var gridArea = &quot;content&quot;</code></p>
+<p>What is done above is, save the string <code>content</code> into the variable <code>gridArea</code>.</p>
+<p>What the CSS declarations above does is quite similar.</p>
+<p>Every grid item can be assigned to an area within the grid container. Read that again.</p>
+<blockquote>
+<p><strong><em>Every grid item can be assigned to an area within the container.</em></strong></p>
+</blockquote>
+<p>However, before doing that, it is imperative to arrach the grid items to an area name. Like you assign variables in JavaScript–sort of.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.main &#123;</span><br><span class="line">  grid-area: content;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.footer &#123;</span><br><span class="line">  grid-area: footer;</span><br><span class="line">e&#125;</span><br><span class="line"></span><br><span class="line">.aside &#123;</span><br><span class="line">  grid-area: sidebar;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The code block above says, let the <code>.main</code> class have an area name of <code>content</code>. Let the <code>.footer</code> class have an area name of <code>footer</code>. Finally, let the <code>.aside</code> class have a grid name of <code>sidebar</code>.</p>
+<p>Now the grid items have all been assigned area names.</p>
+<p>In programming, variables are set to be used elsewhere. Now let’s make use of the grid area names.</p>
+<h3 id="Grid-area-placement"><a href="#Grid-area-placement" class="headerlink" title="Grid area placement"></a>Grid area placement</h3><p>A young man has a well baked cake. He has 3 chlidren asking to give them some portions. Ideally, who shares the cake?e</p>
+<p>The young man!<br>e<br>The young man cuts out the areas and gives them to his children.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*xN-041OZXzMZvCJ76WRtfQ.jpeg" alt="yummy cake" title="yummy cake"></p>
+<p>Here’s why I told that sweet story.</p>
+<p>Like the cake, the entire grid area is owned by who?</p>
+<p>The grid container!</p>
+<p>Like the young man, the grid container has 3 children too <code>.aside</code>、<code>.main</code> and <code>.footer</code>. Now the grid container gets to choose how the entire area portions are shared.</p>
+<p>One more thing.</p>
+<p>Because the children all have names, the young man may say,”hey <strong>Brian</strong>, here’s your portion”, or “hey <strong>Emma</strong>, have this”</p>
+<p>It is easy to identify who owns what portion of the cake, by assigning the portions to a named individual. I have no cure for you if you live in a country where people go without names.</p>
+<p>The grid items all have names! We did so using the <code>grid-area</code> property.</p>
+<p>Now, let’s share the cake!</p>
+<h3 id="The-grid-template-areas-property"><a href="#The-grid-template-areas-property" class="headerlink" title="The grid-template-areas property"></a>The grid-template-areas property</h3><p>Now the grid container must share the “cake”. Assign what area portion goes to who.</p>
+<p>There are many ways to do what I am about to explain to you, but the <code>grid-template-areas</code> property is the easiest to reason about. It is the bit you need to know for efficiency.</p>
+<h3 id="How-does-the-grid-template-areas-property-work"><a href="#How-does-the-grid-template-areas-property-work" class="headerlink" title="How does the grid-template-areas property work?"></a>How does the <code>grid-template-areas</code> property work?</h3><p>Take a look at the code below:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">       grid-template-areas: &quot;sidebar  content&quot;</span><br><span class="line">                            &quot;footer   footer&quot;;                                     </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>What the heck is that?</p>
+<p>That my dear, is the <code>grid-template-areas</code> property in action. There’s no need to get overwhelmed. In this section, I will explain how it works–in clear terms.</p>
+<p>The <code>grid-template-areas</code> property (what a long property name) provides a very visual structure of the grid.</p>
+<p>Take a look at the code again:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">      ...</span><br><span class="line">      grid-template-areas: &quot;sidebar  content&quot;</span><br><span class="line">                           &quot;footer   footer&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Note that the entires in the property value are the names of the grid items!</p>
+<p><code>sidebar</code>、<code>content</code> and <code>footer</code> refer to the names of the grid items. The declaration above has succesfully shared the area with respect to the names of the grid items–brilliant!</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*NjMwDa_1b1vHkAbpXI_f7w.png" alt="example img" title="example img"></p>
+<p>The image above will help you understand how the area portions have been split.</p>
+<p>The <code>footer</code> takes the entire bottom area. The <code>sidebar</code> and <code>content</code> take first and second top areas respectively.</p>
+<p>Awesome!</p>
+<p>At this point here’s what we have:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  display: grid;</span><br><span class="line">  grid-template-columns: 40px 1fr;</span><br><span class="line">  grid-template-rows: 1fr 90px;</span><br><span class="line">  grid-template-areas: &quot;sidebar  content&quot;</span><br><span class="line">                       &quot;footer   footer&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The result of that is this:</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*LNfazbNhUOy6YBEE7Sr_Uw.png" alt="step 1 result" title="step 1 result"></p>
+<p>I have added colors for visual aid. The red section represents the footer, the other two sections, the <code>.main</code> section and <code>.sidebar</code>.</p>
+<h3 id="Let’s-Get-Responsive–Redefining-Grid-Areas-with-Media-Queries"><a href="#Let’s-Get-Responsive–Redefining-Grid-Areas-with-Media-Queries" class="headerlink" title="Let’s Get Responsive–Redefining Grid Areas with Media Queries"></a>Let’s Get Responsive–Redefining Grid Areas with Media Queries</h3><p><img src="https://cdn-images-1.medium.com/max/800/1*9H_Ylq3VVHRLQRTZZLYbQQ.gif" alt="responsive gif" title="responsive gif"></p>
+<p>The Grid areas you create within the parent grid container are not set in stone. The grid areas can be changed based off of the screen size fo the user’s device. </p>
+<p>The image below shows what we aim to achieve on mobile displays.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*Gd8H2uQF3-TVi4lq7g1UAw.png" alt="mobile display" title="catty music display on mobile"></p>
+<p>For our specific use-case we will do some refactoring for a mobile first approach.</p>
+<p>Mobile first is simply making your default styles those for mobile devices. Then you may go ahead to make changes for larger display via media queries.</p>
+<p>Tweak the current code you have now. Wrap the grid defining bit in a media query.</p>
+<p>Like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@media only screen and (min-width: 600px) &#123;</span><br><span class="line">  body &#123;</span><br><span class="line">      grid-template-columns: 120px 1fr;</span><br><span class="line">      grid-template-areas: &quot;sidebar  content&quot;</span><br><span class="line">                           &quot;footer   footer&quot;;                           </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>You should leave the defaults excluded from the media query.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">   display: grid;</span><br><span class="line">   display: grid-template-rows: 1fr 50px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Why do I have <code>grid-template-rows: 1fr 50px</code> excluded from the media query?</p>
+<p>This is because both mobile and desktop screens will have the same row definition. 2 rows.</p>
+<p>However, on desktop devices, there’s a sidebar. The sidebar accounts for the <code>120px</code> in the <code>grid-template-columns</code> definition. Howbeit, the sidebar is non-existent on mobile devices.</p>
+<p>Thus, we will redefine the <code>grid-template-column</code> declaration for mobile.</p>
+<p>Now for mobile devices, we will leave this as the default styling. i.e not warpped in any media query.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">   grid-template-areas: &quot;content&quot;</span><br><span class="line">                        &quot;footer&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Pretty simple?</p>
+<p>Let me explain.</p>
+<h3 id="The-default-flow-direction-of-a-Grid"><a href="#The-default-flow-direction-of-a-Grid" class="headerlink" title="The default flow (direction) of a Grid"></a>The default flow (direction) of a Grid</h3><p>The code block for mobile displays is easy.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  grid-template-areas: &quot;content&quot;</span><br><span class="line">                       &quot;footer&quot;;                       </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>However, note that there was no need to specify <code>grid-template-columns</code>.</p>
+<font style="background-color:#e6f2ff">By default, agrid will align its children along rows.</font>
+
+<p>So, the declaration above will align <code>content</code> along a row, and <code>footer</code> along another.</p>
+<p>Below is the result of that–the sidebar hidden on mobile.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*WeVXg_bAwa5UKqdZHiwQ7w.gif" alt="display on mobile" title="display on mobile"></p>
+<p>With the initial hurdle of understanding how girds work, and setting up a responsive grid, let’s finish up the app layout!</p>
+<h3 id="Placing-Content-within-the-Grid"><a href="#Placing-Content-within-the-Grid" class="headerlink" title="Placing Content within the Grid"></a>Placing Content within the Grid</h3><p>At the end of this section, we would have the Music app layout completed. The focus being, how to place and align content within grids.</p>
+<p>Let’s get started.</p>
+<p><strong>1. The Sidebar</strong><br>This looks like the easiest to start with. Let’s go for it.</p>
+<p>The sidebar consists of 8 icons equally spaced out vertically accross the entire length of the sidebar.</p>
+<p>Insert the icons, like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;aside&quot;&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-volume-up&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-spotify&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-cog&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;i class=&quot;fa fa-soundcloud&quot;&gt;&lt;/i&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>Below is the result of that:</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*DY1tA49VLEOy0I5Fb_HmlQ.png" alt="sidebar result" title="sidebar result"></p>
+<p>Also, hide the icons when on mobile. Show them when the app is visited on a larger screen. This is the mobile first approach.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.aside i &#123;</span><br><span class="line">  display: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@media only screen and (min-width: 600px) &#123;</span><br><span class="line">  .aside i &#123;</span><br><span class="line">    display: block;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The icons are displayed, but poorly aligned.</p>
+<h3 id="Aligning-the-icons"><a href="#Aligning-the-icons" class="headerlink" title="Aligning the icons"></a>Aligning the icons</h3><p>The <code>i</code> tags are inline elements–which explains why every 2 icons sit on one line.</p>
+<p>Let’s fix the arrangement.</p>
+<blockquote>
+<p><em>Grid items can be grids themselves. Why not?</em></p>
+</blockquote>
+<p><strong>Step 1: Make the Sidebar a Grid Container</strong></p>
+<p>This will give access to using the grid’s alignment features.</p>
+<p>Since the sidebar is only seen on larger screens, do not forget to wrap this in the media query.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@media only screen and (min-width: 600px) &#123;</span><br><span class="line">  .aside &#123;</span><br><span class="line">    display: grid;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">.aside i &#123;</span><br><span class="line">  border: 1px solid red;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>I have gone ahead to add borders to each icon–so they are visually distinguishable.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*QcpsRWdU5Q01YC-C2Et11w.png" alt="distinguishable icons" title="make icons distinguishable"></p>
+<p>What’s happening there?</p>
+<p>We have NOT set up any rows or columns within the sidebar. But we have the icons laid out fairly weill. The grid auto placement algorithm has set in.</p>
+<p>This is got to do with the default placement of items in a grid–along a row. Also, the grid items are arranged to take up the space of the grid container, as needed.</p>
+<p>Here comes the sweet sauce.</p>
+<p>A grid may align its items using any of <code>justify-items</code> or <code>align-items</code>.</p>
+<p><code>justify-items</code> will align the items along the <code>row</code> axis. In most cases, row is pretty much synonymous with the horizontal direction.</p>
+<p><code>align-items</code> will align the items along the <code>column</code> axis. In most cases, column is also synonymous with the vertical direciton.</p>
+<p>Apply this to the sidebar, and we have perfectly laid out icons.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.aside &#123;</span><br><span class="line">  ...</span><br><span class="line">  justify-items: center;</span><br><span class="line">  align-items: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Still confused, watch the changes in the sidebar items as I type.</p>
+<p>Now we have perfectly laid out icons within the sidebar.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*gwdH9pKxjMw7MnO8vPmTgw.png" alt="aligned icons" title="aligned icons"></p>
+<p>A few other values <code>justify-items</code> and <code>align-items</code> can take include:</p>
+<ul>
+<li>stretch</li>
+<li>start</li>
+<li>end</li>
+<li>center</li>
+</ul>
+<p>If you’ve worked with Flexbox, these should be familiar.</p>
+<p>We’ll proceed to placing more content into the current design.</p>
+<p>Target the main section, the dark blue section in the image above. Place two <code>div</code> within:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;main__header&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;main__body&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>NB:</strong></p>
+<ol>
+<li><code>main__header</code> will house the music art and playbacks:</li>
+</ol>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*K2ikIxNuiWo8tfY-5RvBXg.png" alt=".main__header" title=".main__header"></p>
+<ol>
+<li><code>main__body</code> will house the details:</li>
+</ol>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*hc80JsuD3IsxxwrAijFWzQ.png" alt=".main__body" title=".main__body"></p>
+<p>In this section we will focus on <code>main__header</code>.</p>
+<p>First off, add the required <code>html</code>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;main__header&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;img&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;http://bit.ly/2sc2NJd&quot;&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;section class=&quot;details&quot;&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;p&gt;CattyBoard Top 100 Single Charts (11.06.36)&lt;/p&gt;</span><br><span class="line">      &lt;p class=&quot;sm--hide&quot;&gt;Unknown Artist&lt;/p&gt;</span><br><span class="line">      &lt;p class=&quot;sm--hide&quot;&gt;2016 . Charts . 100 songs&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;i class=&quot;fa fa-play&quot;&gt; &amp;nbsp;Play all&lt;/i&gt;</span><br><span class="line">      &lt;i class=&quot;fa fa-plus&quot;&gt; &amp;nbsp;Add to&lt;/i&gt;</span><br><span class="line">      &lt;i class=&quot;fa fa-ellipsis-h&quot;&gt; &amp;nbsp;&amp;nbsp;More&lt;/i&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/section&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>Note the way the document is structured.</p>
+<p><code>main__header</code> has two direct children. A <code>div</code> that contains an image, and a <code>section</code> that contains album details, <code>.details</code>.</p>
+<p>The result of the addition above is this rather ugly image:</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*uhNqMg2RUv_bo5371BrOfQ.png" alt="initial header" title="initial header"></p>
+<p>Let’s make this pretty.</p>
+<p>What we need is a grid that aligns its children appropriately.</p>
+<p>Let’s make use of your new knowledge of grid areas.</p>
+<p>First step, define the grid area:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.main__header &gt; .img &#123;</span><br><span class="line">  grid-area: img;</span><br><span class="line">&#125;</span><br><span class="line">.main__header &gt; .details &#123;</span><br><span class="line">  grid-area: dtls;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The <code>div</code> containing the image has been named <code>img</code>. The section containing the album details has been named <code>dtls</code>.</p>
+<p>Now, define the grid itself:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.main__header &#123;</span><br><span class="line">  display: grid;</span><br><span class="line">  grid-template-areas: &quot;img&quot;</span><br><span class="line">                       &quot;dtls&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>.main__header</code> sets a grid formatting context. The areas have also been aligned to stack vertically on another. <code>img</code> first, then <code>dtls</code>.</p>
+<p>This is because we are working with a mobile first approach. Good.</p>
+<p>At this point, nothing much’s changed.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*h60PmaHUtZAMZrC5xrRtbA.png" alt="modified header" title="modified header"></p>
+<p>This is NOT the view we want on mobile.</p>
+<p>For mobile screens, the items should be aligned to the center. Fix that.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (min-width: 600px) &#123;</span><br><span class="line">  .main__header &#123;</span><br><span class="line">    justify-items: center;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Now the grid items will be positioned to the center of the grid (along the row).</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*9Yi3TudvNbbTdYtDBsqL1w.png" alt="aligned items" title="aligned items"></p>
+<p>Make the texts in <code>.details</code> align to the center:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (max-width) &#123;</span><br><span class="line">  .main__header &gt; .details &#123;</span><br><span class="line">    text-align: center;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*Dj_iJrYWYA4lpQdxuzx4Cw.png" alt="aligned texts" title="aligned texts"></p>
+<p>Pretty close to the end goal. Just a few more tweaks.</p>
+<p>The paragraphs with the texts, <em>unknown artist</em> and <em>2016. Charts. 100 songs.</em> should be hidden on mobile. The image should be smaller too.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (max-width: 600px) &#123;</span><br><span class="line">  .sm--hide &#123;</span><br><span class="line">    display: none;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">.img &gt; img &#123;</span><br><span class="line">  width: 150px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Every class <code>.sm--hide</code> will be hidden on mobile. Just add this class to the desired element.</p>
+<p>Here’s how:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p class=&quot;sm--hide&quot;&gt;Unknown Artist&lt;/p&gt;</span><br><span class="line">&lt;p class=&quot;sm--hide&quot;&gt;2016 . Charts . 100 songs&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>And we have this:</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*3EldPliJB9kqZmu9B1UaRg.png" alt="final diaplay" title="final dispaly"></p>
+<p>Having sorted out the view on mobile, let’s fix that for larger screens.</p>
+<p>Back to the parent grid.</p>
+<p>For larger screens, we need a 2 column grid. The areas should be split like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@media only screen and (min-width: 600px) &#123;</span><br><span class="line">  .main__header &#123;</span><br><span class="line">    grid-template-columns: 250px 1fr;</span><br><span class="line">    grid-template-areas: &quot;img dtls&quot;; </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>I’m sure you understand what’s going on there.</p>
+<p>The grid has been redefined to have two columns. One fixed at <code>250px</code> and the other to fill the remaining space.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*iFRIMSqQYAl2AhHBgsCjdw.gif" alt="2 columns on larger screens" title="2 columns on larger screens"></p>
+<p>Our current progress lives <a href="https://codepen.io/ohansemmanuel/pen/gReOQJ?editors=1100" target="_blank" rel="noopener">here</a>.</p>
+<h2 id="Part-4-Making-CSS-Grid-work-with-Flexbox"><a href="#Part-4-Making-CSS-Grid-work-with-Flexbox" class="headerlink" title="Part 4: Making CSS Grid work with Flexbox"></a>Part 4: Making CSS Grid work with Flexbox</h2><p>In this part, you’ll learn to make Flexbox and Grid work together–peacefully.</p>
+<p>These two technologies have changed how layouts in CSS are treated. It is efficient to use both technologies where possible.</p>
+<p>Let’s delve in.</p>
+<p>For the section housing the music details, we will use flexbox.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1000/1*hc80JsuD3IsxxwrAijFWzQ.png" alt="flexbox display" title="flexbox display"></p>
+<h3 id="How-do-you-know-where-to-use-Flexbox"><a href="#How-do-you-know-where-to-use-Flexbox" class="headerlink" title="How do you know where to use Flexbox?"></a>How do you know where to use Flexbox?</h3><p>As a general rule of thumb, it is appropriate to use Grid to layout the overall page layout, and Flexbox for inner UI components.</p>
+<p>A grid item can be a flex container. A flex item can also be a grid container. The latter is frequently used though.</p>
+<p>I assume you have a good grasp of <a href="https://medium.freecodecamp.org/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af" target="_blank" rel="noopener">flexbox</a>.</p>
+<p>As always, begin with the <code>html</code>.</p>
+<p>Below is a <code>div</code>, with a list of songs. The list of songs have paragraphs containing the name of the song, artiste, duration of the song and “catty cloud sync”.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;main__body&quot;&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;p&gt;1. One Dance&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;Crake feat Catkid &amp;amp; Cyla&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;2:54&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;&lt;span&gt;CATTY CLOUD SYNC&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;p&gt;2. Panda&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;Cattee&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;4:06&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;&lt;span&gt;CATTY CLOUD SYNC&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;p&gt;3. Can&apos;t stop the Feeling!&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;Catin Cimberlake&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;3:56&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;&lt;span&gt;CATTY CLOUD SYNC&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;p&gt;4. Work From Home&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;Cat Harmony feat Colla&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;3:34&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;&lt;span&gt;CATTY CLOUD SYNC&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>Here’s what we’ve got:</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*lz7cE6DLCPeX-S6bwCVRJw.gif" alt="list of songs" title="list of songs"></p>
+<p><code>main__body</code> is a grid item. We could make it a flex container if that was useful.</p>
+<p>For our use case, each direct <code>div</code> child of <code>main__body</code> needs to be flex container. This is the <code>div</code> that contains the name of the song, artiste, duration of the song and “catty cloud sync”.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.main__body &gt; div &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Now split the width amongst the chlid elements:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.main__body &gt; div p &#123;</span><br><span class="line">  flex: 0 0 25%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*F7_nB62n6q9TV9aDJJ23tA.png" alt="split the width" title="split the width"></p>
+<p>You’ll agree with me that at this point, the essential of the layout is done. Yes.</p>
+<p>However, I have gone ahead to make a few cosmetic changes.</p>
+<p>You may view the result of that <a href="https://codepen.io/ohansemmanuel/full/QgxEqz/" target="_blank" rel="noopener">here</a>.</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
+          
+            <a href="/tags/前端/" rel="tag"># 前端</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/09/12个HTML和CSS必须知道的重点难点问题/" rel="next" title="12个 HTML 和 CSS 必须知道的重点难点问题">
+                <i class="fa fa-chevron-left"></i> 12个 HTML 和 CSS 必须知道的重点难点问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div class="ds-thread" data-thread-key="2018/04/13/How-to-Efficiently-Master-the-CSS-Grid-in-a-Jiffy/"
+           data-title="How to Efficiently Master the CSS Grid--in a Jiffy" data-url="http://yoursite.com/2018/04/13/How-to-Efficiently-Master-the-CSS-Grid-in-a-Jiffy/">
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Lokiz</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Lokizz" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:newbeeloki@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-Efficiently-Master-the-CSS-Grid–in-a-Jiffy"><span class="nav-number">1.</span> <span class="nav-text">How to Efficiently Master the CSS Grid–in a Jiffy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-just-20"><span class="nav-number">1.1.1.</span> <span class="nav-text">Why just 20%</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-What-is-the-CSS-Grid-Layout"><span class="nav-number">1.1.2.</span> <span class="nav-text">1. What is the CSS Grid Layout?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-we’ll-Bulid"><span class="nav-number">1.1.3.</span> <span class="nav-text">What we’ll Bulid</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-1-The-10-you-Need-to-Know–Basic-Terminologies"><span class="nav-number">1.2.</span> <span class="nav-text">Part 1: The 10% you Need to Know–Basic Terminologies</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-a-Grid-Container"><span class="nav-number">1.2.1.</span> <span class="nav-text">What is a Grid Container?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-a-Grid-Line"><span class="nav-number">1.2.2.</span> <span class="nav-text">What is a Grid Line?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-a-Grid-Cell"><span class="nav-number">1.2.3.</span> <span class="nav-text">What is a Grid Cell?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Grid-Area"><span class="nav-number">1.2.4.</span> <span class="nav-text">Grid Area</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-a-Grid-Track"><span class="nav-number">1.2.5.</span> <span class="nav-text">What is a Grid Track</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-2-The-“Other”-10-you-Need-to-Know–CSS-Grid-Baby-steps"><span class="nav-number">1.3.</span> <span class="nav-text">Part 2: The “Other” 10% you Need to Know–CSS Grid, Baby steps.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-do-you-Define-a-Grid"><span class="nav-number">1.3.1.</span> <span class="nav-text">How do you Define a Grid?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-do-you-Create-Columns-and-Rows"><span class="nav-number">1.3.2.</span> <span class="nav-text">How do you Create Columns and Rows?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-3-Time-to-Code–CSS-Grid-Hands-on"><span class="nav-number">1.4.</span> <span class="nav-text">Part 3: Time to Code–CSS Grid, Hands-on</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-to-Create-the-Basic-Grid-Setup-for-Catty-Music"><span class="nav-number">1.4.1.</span> <span class="nav-text">How to Create the Basic Grid Setup for Catty Music</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-to-create-the-Rows-and-Columns-for-Catty-Music"><span class="nav-number">1.4.2.</span> <span class="nav-text">How to create the Rows and Columns for Catty Music</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Naming-and-Positioning-Items-by-Grid-Areas"><span class="nav-number">1.4.3.</span> <span class="nav-text">Naming and Positioning Items by Grid Areas</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-do-you-start-using-grid-areas"><span class="nav-number">1.4.4.</span> <span class="nav-text">How do you start using grid areas?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-happening-there"><span class="nav-number">1.4.5.</span> <span class="nav-text">What is happening there?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Grid-area-placement"><span class="nav-number">1.4.6.</span> <span class="nav-text">Grid area placement</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-grid-template-areas-property"><span class="nav-number">1.4.7.</span> <span class="nav-text">The grid-template-areas property</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-does-the-grid-template-areas-property-work"><span class="nav-number">1.4.8.</span> <span class="nav-text">How does the grid-template-areas property work?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Let’s-Get-Responsive–Redefining-Grid-Areas-with-Media-Queries"><span class="nav-number">1.4.9.</span> <span class="nav-text">Let’s Get Responsive–Redefining Grid Areas with Media Queries</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-default-flow-direction-of-a-Grid"><span class="nav-number">1.4.10.</span> <span class="nav-text">The default flow (direction) of a Grid</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Placing-Content-within-the-Grid"><span class="nav-number">1.4.11.</span> <span class="nav-text">Placing Content within the Grid</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Aligning-the-icons"><span class="nav-number">1.4.12.</span> <span class="nav-text">Aligning the icons</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-4-Making-CSS-Grid-work-with-Flexbox"><span class="nav-number">1.5.</span> <span class="nav-text">Part 4: Making CSS Grid work with Flexbox</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-do-you-know-where-to-use-Flexbox"><span class="nav-number">1.5.1.</span> <span class="nav-text">How do you know where to use Flexbox?</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lokiz</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"your-duoshuo-shortname"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
