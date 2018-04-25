@@ -88,7 +88,17 @@
 <meta property="og:description" content="IntroductionLearning Flexbox can be a pain in the butt. For most persons, it’s not particularly fun at first. It challenges you to rethink how you’ve dealt with layouts in CSS. Don’t fret. I really wo">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*XthcMWtWfUIEmsgR.">
-<meta property="og:updated_time" content="2018-04-25T02:13:30.942Z">
+<meta property="og:image" content="https://www.educative.io/udata/XD9Z2MXG5mX/Screenshot_2_zpsjvonxs0e.png">
+<meta property="og:image" content="https://www.educative.io/udata/1m17YYanXWo/Screenshot_3_zpsytzach4m.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*kOZy8fY5XHpHO_WD5VJJSA.jpeg">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*SG-1eH7jnCkG3WP2.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*WYDvI_a8QE4Aj4Gi.png">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*tDcb8qSR0VYdQd23.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*CScFCtPJW69Z3Pb5.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*P5LZVyUTDVrRdaEp.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*nZtQtAhMgK66mTiu.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*QEXqoeVe48JceOci.">
+<meta property="og:updated_time" content="2018-04-25T09:48:43.262Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Understanding Flexbox">
 <meta name="twitter:description" content="IntroductionLearning Flexbox can be a pain in the butt. For most persons, it’s not particularly fun at first. It challenges you to rethink how you’ve dealt with layouts in CSS. Don’t fret. I really wo">
@@ -392,7 +402,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  551
+                  1,711
                 </span>
               
 
@@ -408,7 +418,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  11
                 </span>
               
             </div>
@@ -461,6 +471,93 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">li &#123;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background-color: #8cacea;</span><br><span class="line">  margin: 8px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Here is what you should have:</p>
 <p><img src="https://cdn-images-1.medium.com/max/800/0*XthcMWtWfUIEmsgR." alt="Flexbox" title="Flexbox activated"></p>
+<p>You may not have noticed, but something’s happened already. The Flexbox formatting context is now initiated.</p>
+<p>Remember that by default, “divs” in CSS stack vertically, from top to bottom.</p>
+<p><img src="https://www.educative.io/udata/XD9Z2MXG5mX/Screenshot_2_zpsjvonxs0e.png" alt="default" title="default layout"></p>
+<p>The image above is the result you may have hoped for. However, with the inclusion of that simple one-liner, <code>display:flex</code>, you can immediately see a change in layout.</p>
+<p>The list elements are now stacked horizontally, from left to right. Just like they would if you used float.</p>
+<p><img src="https://www.educative.io/udata/1m17YYanXWo/Screenshot_3_zpsytzach4m.png" alt="flex layout" title="flex layout"></p>
+<p>The Flexbox model kicks in as soon as you introduce <code>display: flex</code> on any parent element.</p>
+<p>You may not understand why that change in the orientation of the list elements came to be. I promise I’ll go into the inner workings of that very soon. For now, blind trust would suffice.</p>
+<p>There’s one more thing I need to call your attention to.</p>
+<p>As soon as you set the display property to flex, the unordered list automatically becomes the <strong>flex container</strong> and the child elements (in this case, the list elements <code>li</code>) become <strong>flex items</strong>.</p>
+<p>These terms would come up over and over again as I walk you through some more interesting things the Flexbox model has in place.</p>
+<p>I have used two key words, and I’d like to lay more emphasis on them as they are vital to understanding what lies ahead.</p>
+<ol>
+<li>Flex container: The parent element you’ve set <code>display: flex</code> on.</li>
+<li>Flex items: The children elements within a Flex container.</li>
+</ol>
+<table><tr><td bgcolor="#3498db"><center><font color="white"><strong>Flex container:</strong> the parent element in which flex items are contained <br><strong>Flex item(s):</strong> the child/children of the flex-container</font></center></td></tr></table>
+
+<p>This is the foundation for using the flexbox model.</p>
+<p><br></p>
+<h2 id="The-Flex-Container-Properties"><a href="#The-Flex-Container-Properties" class="headerlink" title="The Flex Container Properties"></a>The Flex Container Properties</h2><p><code>Flex-direction || Flex-wrap || Flex-flow || Justify-content || Align-items || Align-content</code></p>
+<p>In the section above, I established some fundamental principles. What flex-containers and flex-items are, and how to initiate the Flexbox model.</p>
+<p>Now is a good time to put all of that to good use.</p>
+<p>Having set a parent element as a flex container, a couple of alignment properties are made available to be used on the flex container.</p>
+<p>Just like you’d define the width property on a block element as <code>width:200px</code>, there are 6 different properties the flex container can take on.</p>
+<p>The good news is that defining these properties doesn’t require a different approach from what you’re already used to.</p>
+<h3 id="1-Flex-direction"><a href="#1-Flex-direction" class="headerlink" title="1. Flex-direction"></a>1. Flex-direction</h3><p>The <code>flex-direction</code> property controls the direction in which the flex-items are laid along the <em>main axis</em>.</p>
+<p>It may take any of four values.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/* where ul represents a flex container */</span><br><span class="line">ul &#123;</span><br><span class="line">  flex-direction: row || column || row-reverse || column-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>In layman’s terms, the <code>flex-direction</code> property let you decide how the flex items are laid out. Either <em>horizontally, vertically</em> or <em>reversed</em> in both directions.</p>
+<p>Technically, <em>“horizontally”</em> and <em>“vertically”</em> isn’t what the directions are called in the “flex world”.</p>
+<p>These are described as <strong>main-axis</strong> and <strong>cross-axis</strong>. The defaults are shown below.</p>
+<p>In layman’s terms again, the main-axis’ default direction feels like <em>“horizontal”</em>. From left to right.</p>
+<p>The cross-axis feels like <em>“vertical”</em>. From top to bottom.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*kOZy8fY5XHpHO_WD5VJJSA.jpeg" alt="" title="Left to Right, Top to Bottom"></p>
+<p>By default, the <code>flex-direction</code> property is set to <code>row</code> and it aligns the flex-item(s) along the main axis. This explains what happened with the unordered list at the start of this article.</p>
+<p>Even though the <code>flex-direction</code> property wasn’t explicitly set, it took on the default value of <code>row</code>.</p>
+<p>The flex items were then laid acroos the main-axis, stacking horizontally from left to right.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*SG-1eH7jnCkG3WP2.png" alt="" title="flex-items stacked acroos the main-axis"></p>
+<p>If the <code>flex-direction</code> property is changed to <code>column</code>, the flex-items will be aligned along the cross-axis.</p>
+<p>They would stack from top to bottom, not from left to right any longer.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*WYDvI_a8QE4Aj4Gi.png" alt="" title="flex-items stacked across the cross-axis"></p>
+<p><br></p>
+<h3 id="2-Flex-wrap"><a href="#2-Flex-wrap" class="headerlink" title="2. Flex-wrap"></a>2. Flex-wrap</h3><p>The flex-wrap property can take on any of three values:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//where ul represents a flex container</span><br><span class="line">ul &#123;</span><br><span class="line">  flex-wrap: wrap || nowrap || wrap-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>I’ll explain how the <code>flex-wrap</code> property works by walking you through an example.</p>
+<p>Try sticking a lot more list items into the unordered list.</p>
+<p>What do you think? Will the flex container resize to accommodate more, or will it break up the list items unto another line?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/*adding 3 more li elements*/</span><br><span class="line">&lt;ul&gt; &lt;!-- parent element --&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt; &lt;!-- first child element --&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt; &lt;!-- second child element --&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt; &lt;!-- third child element --&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<p>Fortunately, the flex-container adapts to accommodate the new flex-items.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*tDcb8qSR0VYdQd23." alt="" title="3 more flex-items added to the unordered list"></p>
+<p>Go a bit further.</p>
+<p>Add a ridiculous amount of flex-items to the parent element. Make it a total of 10 items.</p>
+<p>What happens?</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*CScFCtPJW69Z3Pb5." alt="" title="After adding even more list-items"></p>
+<p>Again, the flex container adapts to fit all children in, even if the browser needs to be scrolled horizontally.</p>
+<p>This is the default behavior of every flex container. A flex container will keep on accmmodating more flex items on a single line.</p>
+<p>This is because the <code>flex-wrap</code> property defaults to <code>nowrap</code>. This causes the flex container to NOT wrap.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">  flex-wrap: nowrap;</span><br><span class="line">  /* Keep on taking more flex items without breaking (wrapping) */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The <code>no-wrap</code> isn’t a iron-clad value. It can be changed.</p>
+<p>With that number of flex-items, you certainly want the flex-items to <em>“wrap”</em> within the flex-container.</p>
+<p>“Wrap” is a fancy word to say, “when the available space within the flex-container can no longer house the flex-items in their default widths, break unto multiple lines.” </p>
+<p>This is possible with the <code>wrap</code> value.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">  flex-wrap: wrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>With this, the flex-items now break up into multiple lines when needed.</p>
+<p>In this case, when a single line can no longer contain all the list items in their default width, they break up into multiple lines. Even no resizing the browser.</p>
+<p>Here’s what that looks like.</p>
+<p>Note that the flex items are now displayed in their default widths. There’s no need to force multiple flex items unto one line.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*P5LZVyUTDVrRdaEp." alt="" title="flex-wrap initiated"></p>
+<p>There’s one more value, <code>wrap-reverse</code>.</p>
+<p>Yes, you guessed right. It lets the flex items break unto multiple line, but in the reverse direction.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*nZtQtAhMgK66mTiu." alt="" title="flex-items wrap in reverse"></p>
+<p><br></p>
+<h3 id="3-Flex-flow"><a href="#3-Flex-flow" class="headerlink" title="3. Flex-flow"></a>3. Flex-flow</h3><td bgcolor="#defad3">The <code>flex-flow</code> is a shorthand property which takes <code>flex-direction</code> and <code>flex-wrap</code> values.</td>
+
+<p>Ever used the <code>border</code> shorthand property? <code>border: 1px solid red</code>.</p>
+<p>It’s the same concept here. Multiple values declared in one line.</p>
+<p>See the example below.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">  flex-flow: row wrap; /* direction &quot;row&quot; and yes, please wrap the items. */ </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*QEXqoeVe48JceOci." alt="" title="flex-flow broken down in bits"></p>
+<p>Try out the other combinations this could take. <code>flex-flow: row nowrap</code>, <code>flex-flow: column wrap</code>, <code>flex-flow: column nowrap</code>.</p>
+<p>The results produced are not different from what you’ve seen with the <code>flex-direction</code> and <code>flex-wrap</code> values.</p>
+<p>I’m sure you understand what those would produce.</p>
+<p>Give them a try.</p>
+<p><br></p>
+<h3 id="4-Justify-content"><a href="#4-Justify-content" class="headerlink" title="4. Justify-content"></a>4. Justify-content</h3><p>Life’s really good with the Flexbox model. If you still doubt that, the <code>justify-content</code> property may convince you.</p>
+<p>The </p>
 
       
     </div>
@@ -656,7 +753,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-use-Flexbox"><span class="nav-number">1.1.</span> <span class="nav-text">Why use Flexbox?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-Flexbox"><span class="nav-number">1.2.</span> <span class="nav-text">What is Flexbox?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-do-I-start-using-the-Flexbox-model"><span class="nav-number">1.3.</span> <span class="nav-text">How do I start using the Flexbox model?</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-use-Flexbox"><span class="nav-number">1.1.</span> <span class="nav-text">Why use Flexbox?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-Flexbox"><span class="nav-number">1.2.</span> <span class="nav-text">What is Flexbox?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-do-I-start-using-the-Flexbox-model"><span class="nav-number">1.3.</span> <span class="nav-text">How do I start using the Flexbox model?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Flex-Container-Properties"><span class="nav-number">2.</span> <span class="nav-text">The Flex Container Properties</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Flex-direction"><span class="nav-number">2.1.</span> <span class="nav-text">1. Flex-direction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Flex-wrap"><span class="nav-number">2.2.</span> <span class="nav-text">2. Flex-wrap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Flex-flow"><span class="nav-number">2.3.</span> <span class="nav-text">3. Flex-flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Justify-content"><span class="nav-number">2.4.</span> <span class="nav-text">4. Justify-content</span></a></li></ol></li></ol></div>
             
 
           </div>
