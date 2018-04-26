@@ -98,7 +98,25 @@
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*P5LZVyUTDVrRdaEp.">
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*nZtQtAhMgK66mTiu.">
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*QEXqoeVe48JceOci.">
-<meta property="og:updated_time" content="2018-04-25T09:48:43.262Z">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*jQHxX2mhCsdcZCQI.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*pTtIG-EJSNgigdq5.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*Lx-yhF9ToSiyWzri.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*vgzlCT4mGwKOYiiN.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*DPhXij-vwWMJASv3.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*5z_p3RECsqmdkMFY.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*dyXVOSmt4JhJM0ca.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*iMYnd3X7H2eDve2R.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*I-clSRUG_IwRL1Sq.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*Ofe3sDOi052ZXbO8.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*weCwBKzjwWFdDNo5.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*1H_6ah9JYaBV4rgq.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*gX5M08pkPbVLi10V.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*4d9QEzsYpu8vCqaP.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*ULIwSdcSzqF74FAK.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*C-5EPPdkMWu2l0vQ.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*vazJsEIQpiJecwNt.">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*BZAEngXPND6WJSeB.">
+<meta property="og:updated_time" content="2018-04-26T05:58:11.484Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Understanding Flexbox">
 <meta name="twitter:description" content="IntroductionLearning Flexbox can be a pain in the butt. For most persons, it’s not particularly fun at first. It challenges you to rethink how you’ve dealt with layouts in CSS. Don’t fret. I really wo">
@@ -402,7 +420,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,711
+                  2,575
                 </span>
               
 
@@ -418,7 +436,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  11
+                  16
                 </span>
               
             </div>
@@ -557,7 +575,92 @@
 <p>Give them a try.</p>
 <p><br></p>
 <h3 id="4-Justify-content"><a href="#4-Justify-content" class="headerlink" title="4. Justify-content"></a>4. Justify-content</h3><p>Life’s really good with the Flexbox model. If you still doubt that, the <code>justify-content</code> property may convince you.</p>
-<p>The </p>
+<p>The <code>justify-content</code> property takes on any of the 5 values below.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">  justify-content: flex-start || flex-end || center || space-between || space-around</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>And what exactly does the <code>justify-content</code> property bring to the table?</p>
+<p>Well, it may remind you of the <code>text-align</code> property.</p>
+<p>The <code>justify-content</code> property defines how flex items are laid out on the <em>main-axis</em>.</p>
+<p>A quick example.</p>
+<p>Conside the simple unordered list below.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">  &lt;li&gt;1&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;2&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;3&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<p>Add up some basic styling.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">  border: 1px solid red;</span><br><span class="line">  padding: 0;</span><br><span class="line">  list-style: none;</span><br><span class="line">  background-color: #e8e8e9;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">li &#123;</span><br><span class="line">  background-color: #8cacea;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  margin: 8px;</span><br><span class="line">  padding: 4px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>You should have this:</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*jQHxX2mhCsdcZCQI." alt="" title="default view after initiating flexbox"></p>
+<p>With the <code>justify-content</code> property, the three flex items may be aligned across the main-axis in whatever way you desire.</p>
+<p>Here’s the breakdown of what’s possible.</p>
+<p><strong>(i) Flex-start</strong><br>The default value is <code>flex-start</code>.</p>
+<p><code>flex-start</code> groups all flex items to the <strong>start</strong> of the main-axis.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">  justify-content: flex-start;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*pTtIG-EJSNgigdq5." alt="" title="justify-content: flex-start (default behavior)"></p>
+<p><strong>(ii) Flex-end</strong><br><code>flex-end</code> groups the flex-items to the <strong>end</strong> of the main-axis.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">  justify-content: flex-end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*Lx-yhF9ToSiyWzri." alt="" title="justify-content: flex-end"></p>
+<p><strong>(iii) Center</strong><br><code>center</code> does just what you’d expect: it centers the flex items along the main-axis.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">  justify-content: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*vgzlCT4mGwKOYiiN." alt="" title="justify-content: center"></p>
+<p><strong>(iv) Space-between</strong><br><code>space-between</code> keeps the same space between each flex item.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">  justify-content: space-between;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*DPhXij-vwWMJASv3." alt="" title="justify-content: space-between"></p>
+<p>Um, did you notice anything different here?</p>
+<p>Take a look at the descriptive image below.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*5z_p3RECsqmdkMFY." alt=""></p>
+<p><strong>(v) Space-around</strong><br>Finally, <code>space-around</code> keeps the same spacing around flex items.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &#123;</span><br><span class="line">  justify-content: space-around;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*dyXVOSmt4JhJM0ca." alt="" title="justify-content: space-around"></p>
+<p>A second look doesn’t hurt.</p>
+<p>See the descriptive image below.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*iMYnd3X7H2eDve2R." alt=""></p>
+<p>Don’t worry if these seem like too much to get a hold of. With a bit of practice you will get very comfortable with the syntax.</p>
+<p>Be sure to understand how they affect the display of flex items along the main-axis.</p>
+<p><br></p>
+<h3 id="5-Align-items"><a href="#5-Align-items" class="headerlink" title="5. Align-items"></a>5. Align-items</h3><p>The <code>align-items</code> property is somewhat similar to the <code>justify-content</code> property.</p>
+<p>Having understood the <code>justify-content</code> property, this should be easier to take in.</p>
+<p><code>align-items</code> can be set to any of these values: <code>flex-start || flex-end || center || stretch || baseline</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/* ul represents any flex container */</span><br><span class="line">ul &#123;</span><br><span class="line">  align-items: flex-start || flex-end || center || stretch || baseline</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>It defines how flex items are laid out on the <strong>cross-axis</strong>. This is the difference between the <code>align-items</code> property and <code>justify-content</code>.</p>
+<p>Below is how the difference values affect flex items.</p>
+<p>Do not forget the direction being affected by these properties. The cross-axis.</p>
+<p><strong>(i) Stretch</strong><br>The default value is <code>stretch</code>. This will <em>“stretch”</em> the flex-items so they fill the entire height of the flex container.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*I-clSRUG_IwRL1Sq." alt="" title="align-items: stretch"></p>
+<p><strong>(ii) Flex-start</strong><br>The <code>flex-start</code> does what you expect. It groups the flex items to the start of the cross-axis.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*Ofe3sDOi052ZXbO8." alt="" title="align-items: flex-start"></p>
+<p><strong>(iii) Flex-end</strong><br>As expected, <code>flex-end</code> groups the flex items to the end of the cross-axis.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*weCwBKzjwWFdDNo5." alt="" title="align-items: flex-end"></p>
+<p><strong>(iv) Center</strong><br>The <code>center</code> value is equally predictable. It aligns the flex items to the center of the flex-container.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*1H_6ah9JYaBV4rgq." alt="" title="align-items: center"></p>
+<p><strong>(v) Baseline</strong><br>And the baseline value?</p>
+<p>It aligns flex-items along their <em>baselines</em>.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*gX5M08pkPbVLi10V." alt="" title="align-items: baseline"></p>
+<p><em>“Baseline”</em> really sound fancy.</p>
+<p>The result appears to look just like <code>flex-start</code> but it is subtly different.</p>
+<p>What the heck is “baseline”?</p>
+<p>The image below should help.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*4d9QEzsYpu8vCqaP." alt=""></p>
+<p>Notice how all the flex items are aligned to have their content seat on the “baseline”?</p>
+<p><br></p>
+<h3 id="6-Align-content"><a href="#6-Align-content" class="headerlink" title="6. Align-content"></a>6. Align-content</h3><p>While discussing the <code>wrap</code> property, do you remember what happened when you added more flex items to the flex-container?</p>
+<p>You got a <em>multi-line</em> flex-container.</p>
+<p>The <code>align-content</code> property is used on <em>multi-line</em> flex-containers.</p>
+<p>It takes the same values as <code>align-items</code> apart from <code>baseline</code>.</p>
+<p>By definition, it controls how the flex items are aligned in a multi-line flex-container.</p>
+<p>Just like <code>align-items</code>, the default value is also <code>stretch</code>.</p>
+<p>These are values you should now be familiar with. So, here’s how they affect a <em>multi-line</em> flex-container with 10 flex-items.</p>
+<p><strong>(i) Stretch</strong><br>With <code>stretch</code>, the flex items are “stretched” to fit the available space aling the cross-axis.</p>
+<p>The spacing you see between the flex items below is owing to the <code>margin</code> set on the items.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*ULIwSdcSzqF74FAK." alt=""></p>
+<p><strong>(ii) Flex-start</strong><br>You’ve seen the <code>flex-start</code> value before.</p>
+<p>This time it aligns the items in the <em>multi-line</em> container to the <strong>start</strong> of the cross-axis.</p>
+<p>Remember the default cross-axis is from top-to-down.</p>
+<p>Thus, the flex-items are aligned to the top of the flex container.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*C-5EPPdkMWu2l0vQ." alt=""></p>
+<p><strong>(iii) Flex-end</strong><br>The <code>flex-end</code> value aligns the flex items to the end of the cross-axis.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*vazJsEIQpiJecwNt." alt=""></p>
+<p><strong>(iv) Center</strong><br>Like you may have guessed, <code>center</code> aligns the flex-items to the <strong>center</strong> of the cross-axis.</p>
+<p><img src="https://cdn-images-1.medium.com/max/800/0*BZAEngXPND6WJSeB." alt=""></p>
+<p>That’s the last of the flex-container properties.</p>
+<p>You now understand how to use the various flex-container properties.</p>
+<p>You’ll use these to work through the practical sections coming up.</p>
 
       
     </div>
@@ -753,7 +856,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-use-Flexbox"><span class="nav-number">1.1.</span> <span class="nav-text">Why use Flexbox?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-Flexbox"><span class="nav-number">1.2.</span> <span class="nav-text">What is Flexbox?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-do-I-start-using-the-Flexbox-model"><span class="nav-number">1.3.</span> <span class="nav-text">How do I start using the Flexbox model?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Flex-Container-Properties"><span class="nav-number">2.</span> <span class="nav-text">The Flex Container Properties</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Flex-direction"><span class="nav-number">2.1.</span> <span class="nav-text">1. Flex-direction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Flex-wrap"><span class="nav-number">2.2.</span> <span class="nav-text">2. Flex-wrap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Flex-flow"><span class="nav-number">2.3.</span> <span class="nav-text">3. Flex-flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Justify-content"><span class="nav-number">2.4.</span> <span class="nav-text">4. Justify-content</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-use-Flexbox"><span class="nav-number">1.1.</span> <span class="nav-text">Why use Flexbox?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-Flexbox"><span class="nav-number">1.2.</span> <span class="nav-text">What is Flexbox?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-do-I-start-using-the-Flexbox-model"><span class="nav-number">1.3.</span> <span class="nav-text">How do I start using the Flexbox model?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Flex-Container-Properties"><span class="nav-number">2.</span> <span class="nav-text">The Flex Container Properties</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Flex-direction"><span class="nav-number">2.1.</span> <span class="nav-text">1. Flex-direction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Flex-wrap"><span class="nav-number">2.2.</span> <span class="nav-text">2. Flex-wrap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Flex-flow"><span class="nav-number">2.3.</span> <span class="nav-text">3. Flex-flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Justify-content"><span class="nav-number">2.4.</span> <span class="nav-text">4. Justify-content</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Align-items"><span class="nav-number">2.5.</span> <span class="nav-text">5. Align-items</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Align-content"><span class="nav-number">2.6.</span> <span class="nav-text">6. Align-content</span></a></li></ol></li></ol></div>
             
 
           </div>
